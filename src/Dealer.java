@@ -10,6 +10,7 @@ public class Dealer {
     }
     public void Stand(){
 
+
     }
 
 }
