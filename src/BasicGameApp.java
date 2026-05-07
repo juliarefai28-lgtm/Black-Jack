@@ -18,7 +18,18 @@ public class BasicGameApp {
     }
 
     public static void main(String[] args) {
+        new BasicGameApp();
 
     }
 
+    public BasicGameApp(){
+        System.out.println("welcome to blackjack");
+        deck= new Card[52];
+
+        for ( int i=0;  i<13; i++){
+           deck[i]= new Card("heart", i,10);
+           deck[i].PrintInfo();
+
+        }
+    }
 }
