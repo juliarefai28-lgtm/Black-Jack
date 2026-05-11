@@ -27,9 +27,18 @@ public class BasicGameApp {
         deck= new Card[52];
 
         for ( int i=0;  i<13; i++){
-           deck[i]= new Card("heart", i,10);
-           deck[i].PrintInfo();
+          deck[i]= new Card("heart", i,10);
+        }
+
+        printDeck();
 
         }
+
+        public void printDeck(){
+        for (int i=0; i<deck.length;i++){
+            if (deck[i] !=null){
+                deck[i].PrintInfo();
+            }
+        }
+        }
     }
-}
