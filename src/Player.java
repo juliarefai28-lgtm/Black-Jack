@@ -12,4 +12,13 @@ public class Player {
     public void Stand(){
 
     }
+
+    public Player(){
+
+        isHit =false;
+        isBust=true;
+        cardTotal= 52;
+
+
+    }
 }
