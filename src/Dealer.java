@@ -10,7 +10,20 @@ public class Dealer {
     }
     public void Stand(){
 
+    }
+    public Dealer(){
 
+        Over15= false;
+        isBust= false;
+        cardTotal= 52;
+        hand= new Card[10];
+    }
+    public void printInfo(){
+
+        System.out.println( "Over15: " + Over15);
+        System.out.println( "Card Total: " + cardTotal);
+        System.out.println( "Is Bust:" + isBust);
+        System.out.println( " Hand Size: "+ hand.length);
     }
 
 }
