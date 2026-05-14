@@ -16,10 +16,10 @@ public class Player {
     public Player(){
 
         isHit =false;
-        isBust=true;
-        cardTotal= 52;
-        name = "Player";
-        hand = new Card[10];
+        isBust=false;
+        cardTotal= 0;
+        name = "me";
+        hand = new Card[2];
 
     }
     public void printInfo(){
@@ -29,5 +29,13 @@ public class Player {
         System.out.println( " Is Bust: "+isBust);
         System.out.println( " Is Hit: " + isHit);
         System.out.println( " Hand Size: " + hand.length);
+        for (int s=0; s<hand.length; s++){
+            hand[s].PrintInfo();
+        }
+    }
+    public void calculateTotal(){
+        for ( int f=0; f<hand.length; f++){
+            cardTotal+=hand[f].value;
+        }
     }
 }

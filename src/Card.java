@@ -47,9 +47,12 @@ public class Card {
         } else if (pName == 10) {
             name = "Jack";
             value = 10;
-        } else if (pName == 10) {
+        } else if (pName == 11) {
             name = "Queen";
-            value = 10;
+            value = 11;
+        } else if ( pName == 12){
+            name = "King";
+            value = 12;
         }
     }
         public void PrintInfo () {
