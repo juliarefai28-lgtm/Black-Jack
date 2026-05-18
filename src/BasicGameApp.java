@@ -46,6 +46,11 @@ public class BasicGameApp {
         me.hand[1]= deck[1];
         me.calculateTotal();
 
+        d.hand[0]= deck[2];
+        d.hand[1]=deck[3];
+        d.calculateTotal();
+        d.printInfo();
+
         //ask the user questions
 
         Scanner s = new Scanner(System.in);
