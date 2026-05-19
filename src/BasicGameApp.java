@@ -60,7 +60,18 @@ public class BasicGameApp {
         me.name = name;
         me.printInfo();
 
+
+        System.out.println( " Do you want to hit or stay ?");
+        String Hit = s.nextLine();
+        System.out.println( " Hit or Stay "+Hit);
+        if ( Hit.equals("Hit")){
+         me.isHit=true;
+            me.printInfo();
         }
+        me.printInfo();
+
+        }
+
 
         public void printDeck(){
         for (int i=0; i<deck.length;i++){
