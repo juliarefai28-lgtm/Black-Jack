@@ -68,7 +68,14 @@ public class BasicGameApp {
          me.isHit=true;
             me.printInfo();
         }
-        me.printInfo();
+       if (Hit.equals("Hit")){
+           me.hand[2]=deck[4];
+           me.calculateTotal();me.printInfo();
+       }
+       if (Hit.equals("Stay")){
+           System.out.println("You stayed");
+           d.printInfo();
+       }
 
         }
 
