@@ -63,17 +63,19 @@ public class BasicGameApp {
 
         System.out.println( " Do you want to hit or stay ?");
         String Hit = s.nextLine();
-        System.out.println( " Hit or Stay "+Hit);
+        System.out.println( " Hit or Stay "+ Hit);
         if ( Hit.equals("Hit")){
          me.isHit=true;
             me.printInfo();
-        }
-       if (Hit.equals("Hit")){
+            me.hand = new Card[3];
+            me.hand[0]= deck[0];
+            me.hand[1]= deck[1];
            me.hand[2]=deck[4];
-           me.calculateTotal();me.printInfo();
+           me.calculateTotal();
+           me.printInfo();
        }
        if (Hit.equals("Stay")){
-           System.out.println("You stayed");
+           System.out.println(" You decided to stay! ");
            d.printInfo();
        }
 
