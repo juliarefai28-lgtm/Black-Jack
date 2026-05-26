@@ -63,7 +63,8 @@ public class BasicGameApp {
 
         System.out.println( " Do you want to hit or stay ?");
         String Hit = s.nextLine();
-        System.out.println( " Hit or Stay "+ Hit);
+        System.out.println( " Hit or Stay " + Hit);
+
         if ( Hit.equals("Hit")){
          me.isHit=true;
             me.printInfo();
@@ -79,8 +80,22 @@ public class BasicGameApp {
            d.printInfo();
        }
 
-        }
+       if (me.isAce==true){
+           System.out.println( " Do you want Ace to be one or eleven? ");
+           String isAce= s.nextLine();
+           System.out.println( " Eleven or One " + isAce);
 
+           if (isAce.equals("Eleven")){
+               System.out.println( " You chose Ace to eleven! ");
+               d.printInfo();
+
+               if (isAce.equals( " One ")){
+                   System.out.println( " You chose Ace to be one ");
+                   d.printInfo();
+               }
+           }
+       }
+    }
 
         public void printDeck(){
         for (int i=0; i<deck.length;i++){

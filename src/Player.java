@@ -5,6 +5,7 @@ public class Player {
     public boolean isHit;
     public Card [] hand;
     public String name;
+    public boolean isAce;
 
     public void Hit(){
 
@@ -16,6 +17,7 @@ public class Player {
     public Player(){
 
         isHit =false;
+        isAce= false;
         isBust=false;
         cardTotal= 0;
         name = "me";
