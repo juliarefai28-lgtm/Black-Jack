@@ -8,6 +8,22 @@ public class BasicGameApp {
 
     public void Compare(){
 
+        if (me.total>21){
+            System.out.println( " You lost! Dealer Wins!");
+        }
+        else if(d.total>21){
+            System.out.println( "Dealer lost! You Win!");
+        }
+        else if(me.total>d.total){
+            System.out.println( " You win ");
+        }
+        else if (d.total>me.total){
+            System.out.println( "Dealer Wins! ");
+        }
+        else{
+            System.out.println( " Tie Game! ");
+        }
+
     }
     public void round(){
 

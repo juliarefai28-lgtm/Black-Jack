@@ -6,6 +6,7 @@ public class Player {
     public Card [] hand;
     public String name;
     public boolean isAce;
+    public int total;
 
     public void Hit(){
 
