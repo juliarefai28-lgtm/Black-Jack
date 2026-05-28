@@ -10,17 +10,17 @@ public class BasicGameApp {
 
         if (me.total>21){
             System.out.println( " You lost! Dealer Wins!");
-        }
-        else if(d.total>21){
+
+        } else if(d.total>21){
             System.out.println( "Dealer lost! You Win!");
-        }
-        else if(me.total>d.total){
+
+        } else if(me.total>d.total){
             System.out.println( " You win ");
-        }
-        else if (d.total>me.total){
+
+        } else if (d.total>me.total){
             System.out.println( "Dealer Wins! ");
-        }
-        else{
+
+        } else{
             System.out.println( " Tie Game! ");
         }
 
@@ -101,15 +101,15 @@ public class BasicGameApp {
            String isAce= s.nextLine();
            System.out.println( " Eleven or One " + isAce);
 
-           if (isAce.equals("Eleven")){
-               System.out.println( " You chose Ace to eleven! ");
+           if (isAce.equals("Eleven")) {
+               System.out.println(" You chose Ace to eleven! ");
                d.printInfo();
-
+           }
                if (isAce.equals( " One ")){
                    System.out.println( " You chose Ace to be one ");
                    d.printInfo();
                }
-           }
+
        }
     }
 
